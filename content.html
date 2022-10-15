@@ -1,0 +1,292 @@
+<!-- 
+    Doctype (Document Type Declaration) Döküman tipi
+    HTML5 için kolayca;
+    <!DOCTYPE html>
+    ------------------
+    Diğer html versiyonları neler? Nasıl tanımlanıyor?
+    ------------------
+-->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>HTML DERS 101</title>
+    <!-- https://www.w3schools.com/tags/att_meta_charset.asp -->
+    <meta charset="UTF-8" />
+    <meta name="title" content="HTML5 Ders 101" />
+    <meta name="description" content="HTML5 hakkında bilgiler ve örnekler" />
+    <meta name="keywords" content="HTML5, Ders" />
+
+    <!-- 
+        Sayfa yazarının tanımlanması:
+        <meta name="author" content="Bilge Adam Teknoloji">
+
+        Sayfanın 20 saniye aralıklarla yenilenmesi:
+        <meta http-equiv="refresh" content="20">
+
+        https://www.w3schools.com/tags/tag_meta.asp
+        Setting the Viewport
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.<com/css2?family=Open+Sans:wght@500&family=PT+Mono&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        background-color: #c8d6e5;
+        color: #222f3e;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .main-content article {
+        margin-bottom: 5em;
+      }
+
+      pre,
+      code {
+        background-color: #8395a7;
+        font-family: 'PT Mono', monospace;
+      }
+
+      pre {
+        max-width: 300px;
+        padding: 1em;
+        white-space: pre-wrap;
+      }
+
+      code {
+        padding: 0.2em;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table th,
+      table td {
+        padding: 0.5em;
+      }
+
+      table th {
+        text-align: left;
+      }
+
+      table tbody {
+        font-size: 0.95em;
+      }
+
+      .table th {
+        background-color: #576574;
+        color: #c8d6e5;
+      }
+
+      .table tbody {
+        background-color: #8395a7;
+      }
+
+      .table tfoot {
+        background-color: #01a3a4;
+        color: #c8d6e5;
+      }
+
+      .box {
+        border: 1px solid #8395a7;
+        padding: 1em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- naming case styles : camelCase, PascalCase, snake_case, kebab-case -->
+      <section class="main-content">
+        <article id="nestedElements">
+          <header>
+            <h1>Article & Section</h1>
+            <p>
+              <code>section</code> içerisinde <code>article</code> mı? yoksa
+              <code>article</code> içerisinde <code>section</code> mı?
+            </p>
+          </header>
+          <p>
+            <code>article</code> etiketi bağımsız bir içeriği olan, tek başına
+            bir anlam ifade eden içerikler için kullanılır.
+          </p>
+          <p>
+            <code>section</code> etiketi ise sayfadaki bir bölümü temsil eder.
+          </p>
+          <p>
+            <!-- 
+                code & pre tags
+                If you want to render a < character then use &lt;, with &gt; for > and &amp; for &.
+            -->
+            <pre>&lt;section&gt;<br>  &lt;article&gt;&lt;/article&gt;<br>&lt;/section&gt;</pre>
+            <pre>&lt;article&gt;<br>  &lt;section&gt;&lt;/section&gt;<br>&lt;/article&gt;</pre>
+          </p>
+          <hr>
+          <p>
+            Aynı zamanda bu iki etiketinde <code>header</code> ve <code>footer</code> alt elemanları <small>(child element)</small> bulunabilir.
+            <br>
+            <pre>&lt;section&gt;<br>  &lt;header&gt;&lt;/header&gt;<br>  &lt;footer&gt;&lt;/footer&gt;<br>&lt;/section&gt;</pre>
+            <pre>&lt;article&gt;<br>  &lt;header&gt;&lt;/header&gt;<br>  &lt;footer&gt;&lt;/footer&gt;<br>&lt;/article&gt;</pre>
+          </p>
+        </article>
+
+        <article id="blockAndInlineElements">
+          <header>
+            <h1>HTML block and inline elements</h1>
+            <p>Her HTML elementi varsayılan <small>(default)</small> olarak bir <code>display</code> değeri alır.
+          </header>
+
+          <section>
+            <p>Block level elementler her zaman yeni bir satırda başlar, ve tarayıcılar otomatik olarak bu elementlere boşluk <small>(margin)</small> uygular.</p>
+            <p style="height: 10em; max-width: 300px; overflow-y: scroll">
+              <code>&lt;address&gt;</code><br>
+              <code>&lt;article&gt;</code><br>
+              <code>&lt;aside&gt;</code><br>
+              <code>&lt;blockquote&gt;</code><br>
+              <code>&lt;canvas&gt;</code><br>
+              <code>&lt;dd&gt;</code><br>
+              <code>&lt;div&gt;</code><br>
+              <code>&lt;dl&gt;</code><br>
+              <code>&lt;dt&gt;</code><br>
+              <code>&lt;fieldset&gt;</code><br>
+              <code>&lt;figcaption&gt;</code><br>
+              <code>&lt;figure&gt;</code><br>
+              <code>&lt;footer&gt;</code><br>
+              <code>&lt;form&gt;</code><br>
+              <code>&lt;h1&gt;-&lt;h6&gt;</code><br>
+              <code>&lt;header&gt;</code><br>
+              <code>&lt;hr&gt;</code><br>
+              <code>&lt;li&gt;</code><br>
+              <code>&lt;main&gt;</code><br>
+              <code>&lt;nav&gt;</code><br>
+              <code>&lt;noscript&gt;</code><br>
+              <code>&lt;ol&gt;</code><br>
+              <code>&lt;p&gt;</code><br>
+              <code>&lt;pre&gt;</code><br>
+              <code>&lt;section&gt;</code><br>
+              <code>&lt;table&gt;</code><br>
+              <code>&lt;tfoot&gt;</code><br>
+              <code>&lt;ul&gt;</code><br>
+              <code>&lt;video&gt;</code><br>
+              <code>&lt;/video&gt;</code><br>
+            </p>
+          </section>
+
+          <section>
+            <p>Inline elementler ise yeni bir satırda başlamaz.</p>
+            <p style="height: 10em; max-width: 300px; overflow-y: scroll">
+              <code>&lt;a&gt;</code><br>
+              <code>&lt;abbr&gt;</code><br>
+              <code>&lt;acronym&gt;</code><br>
+              <code>&lt;b&gt;</code><br>
+              <code>&lt;bdo&gt;</code><br>
+              <code>&lt;big&gt;</code><br>
+              <code>&lt;br&gt;</code><br>
+              <code>&lt;button&gt;</code><br>
+              <code>&lt;cite&gt;</code><br>
+              <code>&lt;code&gt;</code><br>
+              <code>&lt;dfn&gt;</code><br>
+              <code>&lt;em&gt;</code><br>
+              <code>&lt;i&gt;</code><br>
+              <code>&lt;img&gt;</code><br>
+              <code>&lt;input&gt;</code><br>
+              <code>&lt;kbd&gt;</code><br>
+              <code>&lt;label&gt;</code><br>
+              <code>&lt;map&gt;</code><br>
+              <code>&lt;object&gt;</code><br>
+              <code>&lt;q&gt;</code><br>
+              <code>&lt;s&gt;</code><br>
+              <code>&lt;samp&gt;</code><br>
+              <code>&lt;select&gt;</code><br>
+              <code>&lt;small&gt;</code><br>
+              <code>&lt;span&gt;</code><br>
+              <code>&lt;strong&gt;</code><br>
+              <code>&lt;sub&gt;</code><br>
+              <code>&lt;sup&gt;</code><br>
+              <code>&lt;textarea&gt;</code><br>
+              <code>&lt;time&gt;</code><br>
+              <code>&lt;tt&gt;</code><br>
+              <code>&lt;var&gt;</code><br>
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h1>HTML5 ile tablo tasarımı</h1>
+          <p>Tablo tasarım için kullanılan <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> etiketlerinin kullanımı</p>
+        </header>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ülke</th>
+              <th>Şehir</th>
+              <th>Nüfus</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="2">Toplam</td>
+              <td>1.000.000</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Türkiye</td>
+              <td>Ankara</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td>İngiltere</td>
+              <td>Londra</td>
+              <td>8.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">
+                <div class="box">
+                  <p>Header</p>
+                  <div class="box">Logo</div>
+                  <div class="box">Navigation</div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="box">Sidebarz</div>
+              </td>
+              <td colspan="3">
+                <div class="box">Content</div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <div class="box">Footer</div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

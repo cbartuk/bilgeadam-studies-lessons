@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kahve Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize & reset css -->
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="assets/images/goat.svg" width="100" alt="logo" />
+      <h1>Kara Keçi</h1>
+      <p>Kişiye özel kahve</p>
+    </header>
+    <section class="coffee-order-app">
+      <form action="select-roast.html" class="select-bean-form">
+        <h1>Kahve Çekirdeği Seç</h1>
+
+        <div class="select-bean-item">
+          <input type="radio" id="arabica" name="bean" value="arabica" />
+          <label for="arabica">Arabica</label>
+        </div>
+
+        <div class="select-bean-item">
+          <input type="radio" id="colombia" name="bean" value="colombia" />
+          <label for="colombia">Colombia</label>
+        </div>
+
+        <div class="select-bean-item">
+          <input type="radio" id="ethiopia" name="bean" value="ethiopia" />
+          <label for="ethiopia">Ethiopia</label>
+        </div>
+
+        <br />
+        <button type="submit" role="button">İleri</button>
+      </form>
+    </section>
+  </body>
+</html>

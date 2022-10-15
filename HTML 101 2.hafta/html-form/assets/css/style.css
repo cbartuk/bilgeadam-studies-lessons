@@ -1,0 +1,146 @@
+/*
+  dark #060D0B
+  brown #594838
+  cream #E2D9CF
+  green #14401F
+  red #8C3623
+
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Satisfy', cursive;
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../images/coffee-beans.avif");
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+.header {
+  background-color: #14401f;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 3.125rem;
+  color: #e2d9cf;
+  text-shadow: 2px 2px 2px #060d0b;
+  margin-top: -1.8rem;
+}
+
+.header p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #e2d9cf;
+  margin-top: -1em;
+}
+
+/* app */
+.coffee-order-app {
+  background-color: #14401f;
+  border-radius: 0.5rem;
+  margin: 3.75rem auto 0;
+  padding: 2rem;
+  width: 42.5rem;
+}
+
+.coffee-order-app form {
+  background-color: #e2d9cf;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.coffee-order-app h1 {
+  color: #8c3623;
+  text-align: center;
+}
+
+.coffee-types {
+  display: block;
+  font-size: 0;
+  width: 100%;
+}
+
+.coffee-types .coffee-type-item {
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 33.333%;
+  margin: 30px 0;
+}
+
+.coffee-types .coffee-type-item label,
+.coffee-types .coffee-type-item button {
+  display: block;
+}
+
+/* buttons */
+button[role="button"] {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button[role="button"]:hover {
+  background-color: #8c3623;
+  color: #e2d9cf;
+}
+
+button[role="button"]:focus {
+  outline: 0;
+  background-color: #e2d9cf;
+  color: #8c3623;
+}
+
+button[type="submit"] {
+  background-color: #8c3623;
+  color: #e2d9cf;
+  border: 2px solid #8c3623;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  width: 50%;
+}
+
+button[type="submit"]:hover {
+  background-color: #e2d9cf;
+  color: #8c3623;
+}
+
+/*
+  .class,
+  #id
+*/
+.select-bean-form {
+  text-align: center;
+}
+
+.select-bean-form label {
+  border: 2px solid #8c3623;
+  color: #8c3623;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.select-bean-form label:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.select-bean-form input[name="bean"] {
+  display: none;
+}
+
+.select-bean-form input[name="bean"]:checked + label {
+  background-color: #8c3623;
+  color: #e2d9cf;
+}
+
+.select-bean-form .select-bean-item {
+  display: inline-block;
+  margin: 30px 0;
+}

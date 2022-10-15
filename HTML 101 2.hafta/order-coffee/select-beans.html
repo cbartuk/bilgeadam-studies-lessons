@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="coffee-order-app">
+      <header>
+        <img src="assets/images/goat.svg" width="100" alt="Coffee Shop Logo" />
+        <h1>Kara Keçi</h1>
+        <p>Kişiye Özel Kahve</p>
+      </header>
+      <form class="coffee-beans-form">
+        <h2>Kahve Çekirdeğini Seç</h2>
+
+        <div class="coffee-bean-item">
+          <input
+            type="radio"
+            name="coffee-bean"
+            id="colombian"
+            value="colombian"
+          />
+          <label for="colombian">Colombian Supremo</label>
+        </div>
+
+        <div class="coffee-bean-item">
+          <input
+            type="radio"
+            name="coffee-bean"
+            id="ethiopian"
+            value="ethiopian"
+          />
+          <label for="ethiopian">Ethiopian Heirloom</label>
+        </div>
+
+        <div class="coffee-bean-item">
+          <input type="radio" name="coffee-bean" id="kenyan" value="kenyan" />
+          <label for="kenyan">Kenyan AA</label>
+        </div>
+
+        <div class="coffee-bean-item">
+          <input type="radio" name="coffee-bean" id="sumatra" value="sumatra" />
+          <label for="sumatra">Sumatra Mandheling</label>
+        </div>
+
+        <button type="submit" role="button">İleri</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+/*
+  #dark #060D0B
+  #brown #594838
+  #cream #E2D9CF
+  #green #14401F
+  #red #8C3623
+*/
+
+body {
+  background-image: url("../images/coffee-beans.avif");
+  font-family: "Poppins", sans-serif;
+}
+
+.coffee-order-app {
+  background-color: #14401f;
+  border-radius: 0.5rem;
+  border: 2px dashed #060d0b;
+  width: 658px;
+  margin: 60px auto 30px;
+  padding: 45px 30px 30px;
+}
+
+.coffee-order-app img {
+  opacity: 0.85;
+}
+
+.coffee-order-app header {
+  color: #e2d9cf;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.coffee-order-app h1 {
+  font-size: 2.5rem;
+  font-family: "Satisfy", cursive;
+  text-shadow: 2px 2px 2px #060d0b;
+  margin-top: -17px;
+}
+
+.coffee-order-app h2 {
+  color: #8c3623;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.coffee-order-app header p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: -1.1rem;
+}
+
+.coffee-order-app form {
+  background-color: #e2d9cf;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid white;
+  padding: 30px 15px;
+}
+
+.coffee-types-form {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+
+.coffee-types-form .coffee-type-item {
+  display: inline-block;
+  text-align: center;
+  width: 185px;
+  margin: 30px 0;
+}
+
+.coffee-type-item label {
+  color: #594838;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+}
+
+.coffee-type-item label span {
+  background: #594838;
+  border-radius: 5px;
+  color: #e2d9cf;
+  display: block;
+  padding: 5px 10px;
+  margin: 0 15px;
+}
+
+button[role="button"] {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  border: 2px solid #8c3623;
+  border-radius: 5px;
+  background-color: #8c3623;
+  color: #e2d9cf;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin: 30px auto;
+  width: 50%;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #594838;
+  border-color: #594838;
+}
+
+.coffee-type-item button {
+  border: 2px solid #594838;
+  border-radius: 5px;
+  background-color: #e2d9cf;
+  color: #594838;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.coffee-type-item button:focus {
+  outline: none;
+  border-color: #8c3623;
+  background-color: #8c3623;
+  font-weight: 400;
+  color: #e2d9cf;
+}
+
+.coffee-type-item button:active {
+  color: #8c3623;
+}
+
+.coffee-type {
+  background-image: url("../images/coffee-types.jpeg");
+  background-size: 333.333%;
+  border: 15px solid white;
+  border-radius: 0.5rem;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+}
+
+.coffee-type.espresso {
+  background-position: top left;
+}
+
+.coffee-type.doppio {
+  background-position: top center;
+}
+
+.coffee-type.americano {
+  background-position: top right;
+}
+
+.coffee-type.cappuccino {
+  background-position: 0 33.333%;
+}
+
+.coffee-type.latte {
+  background-position: center 33.333%;
+}
+
+.coffee-type.mocha {
+  background-position: right 33.333%;
+}
+
+.coffee-type.macchiato {
+  background-position: right 66.666%;
+}
+
+.coffee-beans-form {
+  margin-top: 60px;
+}
+
+.coffee-beans-form .coffee-bean-item {
+  display: inline-block;
+  margin: 5px 4px;
+  width: 270px;
+}
+
+.coffee-beans-form .coffee-bean-item input[type="radio"] {
+  display: none;
+}
+
+.coffee-beans-form .coffee-bean-item label {
+  border: 2px solid #594838;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.coffee-beans-form .coffee-bean-item input[type="radio"]:checked + label {
+  border-color: #8c3623;
+  background-color: #8c3623;
+  color: #e2d9cf;
+}

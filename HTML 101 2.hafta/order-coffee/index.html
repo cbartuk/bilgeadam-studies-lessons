@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="coffee-order-app">
+      <header>
+        <img src="assets/images/goat.svg" width="100" alt="Coffee Shop Logo" />
+        <h1>Kara Keçi</h1>
+        <p>Kişiye Özel Kahve</p>
+      </header>
+      <form class="coffee-types-form">
+        <h2>Kahveni Seç</h2>
+        <div class="coffee-type-item">
+          <label for="espresso">
+            <div class="coffee-type espresso"></div>
+            <span>Espresso</span>
+          </label>
+          <button type="submit" formaction="views/espresso.html" id="espresso">
+            + Seç
+          </button>
+        </div>
+
+        <div class="coffee-type-item">
+          <label for="cappuccino">
+            <div class="coffee-type cappuccino"></div>
+            <span>Cappuccino</span>
+          </label>
+          <button type="submit" id="cappuccino">+ Seç</button>
+        </div>
+
+        <div class="coffee-type-item">
+          <label for="latte">
+            <div class="coffee-type latte"></div>
+            <span>Latte</span>
+          </label>
+          <button type="submit" id="latte">+ Seç</button>
+        </div>
+
+        <div class="coffee-type-item">
+          <label for="mocha">
+            <div class="coffee-type mocha"></div>
+            <span>Mocha</span>
+          </label>
+          <button type="submit" id="mocha">+ Seç</button>
+        </div>
+
+        <div class="coffee-type-item">
+          <label for="americano">
+            <div class="coffee-type americano"></div>
+            <span>Americano</span>
+          </label>
+          <button type="submit" id="americano">+ Seç</button>
+        </div>
+
+        <div class="coffee-type-item">
+          <label for="macchiato">
+            <div class="coffee-type macchiato"></div>
+            <span>Macchiato</span>
+          </label>
+          <button type="submit" id="macchiato">+ Seç</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kahve Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize & reset css -->
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <section class="coffee-order-app">
+      <h1>Ödeme Sayfası</h1>
+
+      <form action="success.html">
+        <label for="fullname">Ad Soyad</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Adınız ve Soyadınız"
+          required
+        />
+        <br />
+
+        <label for="email">E-posta</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-posta adresiniz"
+          required
+        />
+        <br />
+
+        <label for="phone">Telefon</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="90555XXXXXX"
+          required
+        />
+        <br />
+
+        <label for="city">Şehir</label>
+        <select id="city">
+          <option value="istanbul">İstanbul</option>
+          <option value="ankara">Ankara</option>
+          <option value="izmir">İzmir</option>
+          <option value="bursa">Bursa</option>
+          <option value="antalya">Antalya</option>
+        </select>
+        <br />
+
+        <label for="county">İlçe</label>
+        <select id="county">
+          <option value="adalar">Adalar</option>
+          <option value="kadikoy">Kadıköy</option>
+          <option value="sariyer">Sarıyer</option>
+          <option value="sultanbeyli">Sultanbeyli</option>
+          <option value="sultangazi">Sultangazi</option>
+          <option value="silivri">Silivri</option>
+        </select>
+        <br />
+
+        <label for="address">Adres</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Adresiniz"
+          required
+        />
+
+        <hr />
+
+        <label for="card">Kart Numarası</label>
+        <input
+          type="text"
+          id="card"
+          name="card"
+          placeholder="Kart Numarası"
+          minlength="16"
+          maxlength="16"
+          required
+        />
+        <br />
+
+        <label for="expiry">Son Kullanma Tarihi</label>
+        <input
+          type="text"
+          id="expiry"
+          name="expiry"
+          placeholder="01/22"
+          minlength="5"
+          maxlength="5"
+          required
+        />
+        <br />
+
+        <label for="cvv">CVV</label>
+        <input
+          type="text"
+          id="cvv"
+          name="cvv"
+          placeholder="CVV"
+          minlength="3"
+          maxlength="3"
+          pattern="[0-9]{3}"
+          required
+        />
+
+        <hr />
+
+        <button type="submit" role="button">Ödeme Yap</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!--
+  sayfaya ortalı bir şekilde yerleştirilmiş bir form oluşturun
+  register form
+  login form
+  form validation
+
+  css sprite araştır
+
+  pizza özelleştir > boyut > malzeme > hamur
+  dondurma özelleştir > külah, kase > top miktar > çeşit
+  kumpir özelleştir > boyut > malzeme
+
+  görseller
+  unsplash.com
+
+  ön tanımlı renkler
+  https://flatuicolors.com/
+  https://color.adobe.com/tr/
+
+  checkout form
+
+  teslimat tarihi ve saati bugün, ve yarın seçilemesin, 2 hafta sonrasınıda seçemesin
+
+  siparişiniz alındı sayfası
+
+  geri dön linki
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kahve Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize & reset css -->
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="assets/images/goat.svg" width="100" alt="logo" />
+      <h1>Kara Keçi</h1>
+      <p>Kişiye özel kahve</p>
+    </header>
+    <section class="coffee-order-app">
+      <form>
+        <h1>Kahveni Seç</h1>
+
+        <div class="coffee-types">
+          <div class="coffee-type-item">
+            <label for="espresso">Espresso</label>
+            <button
+              type="submit"
+              role="button"
+              formaction="select-bean.html"
+              id="espresso"
+            >
+              Seç
+            </button>
+          </div>
+
+          <div class="coffee-type-item">
+            <label for="doppio">Doppio</label>
+            <button
+              type="submit"
+              id="doppio"
+              role="button"
+              formaction="select-bean.html"
+            >
+              Seç
+            </button>
+          </div>
+
+          <div class="coffee-type-item">
+            <label for="americano">Americano</label>
+            <button
+              type="submit"
+              id="americano"
+              role="button"
+              formaction="select-bean.html"
+            >
+              Seç
+            </button>
+          </div>
+
+          <div class="coffee-type-item">
+            <label for="latte">Latte</label>
+            <button
+              type="submit"
+              id="latte"
+              role="button"
+              formaction="select-milk.html"
+            >
+              Seç
+            </button>
+          </div>
+
+          <div class="coffee-type-item">
+            <label for="cappuccino">Cappuccino</label>
+            <button
+              type="submit"
+              id="cappuccino"
+              role="button"
+              formaction="select-milk.html"
+            >
+              Seç
+            </button>
+          </div>
+
+          <div class="coffee-type-item">
+            <label for="mocha">Mocha</label>
+            <button
+              type="submit"
+              id="mocha"
+              role="button"
+              formaction="select-milk.html"
+            >
+              Seç
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

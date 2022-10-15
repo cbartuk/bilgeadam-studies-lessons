@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kahve Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize & reset css -->
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <section class="coffee-order-app">
+      <h1>Kavrulma derecesini seç</h1>
+
+      <form action="select-size.html">
+        <input type="radio" id="light" name="roast" value="light" />
+        <label for="light">Hafif</label>
+
+        <br />
+
+        <input type="radio" id="medium" name="roast" value="medium" />
+        <label for="medium">Orta</label>
+
+        <br />
+
+        <input type="radio" id="dark" name="roast" value="dark" />
+        <label for="dark">Koyu</label>
+
+        <br />
+
+        <button type="submit" role="button">Devam</button>
+      </form>
+    </section>
+  </body>
+</html>

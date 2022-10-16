@@ -1,0 +1,107 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  width: 150px;
+}
+
+.social-media {
+  background: url("../images/social.png") no-repeat;
+  background-size: 300%;
+  width: 48px;
+  height: 48px;
+}
+
+.social-media.instagram {
+  background-position: top left;
+}
+
+.social-media.instagram:hover {
+  background-position: bottom left;
+}
+
+.social-media.twitter {
+  background-position: top center;
+}
+
+.social-media.twitter:hover {
+  background-position: bottom center;
+}
+
+.social-media.facebook {
+  background-position: top right;
+}
+
+.social-media.facebook:hover {
+  background-position: bottom right;
+}
+
+.css-sprite {
+  background: url("../images/navigation-sprites.svg");
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  zoom: 0.8;
+}
+
+.css-sprite.dashboard {
+  background-position: -180px 0;
+}
+
+.css-sprite.dashboard:hover {
+  background-position: -60px 0;
+}
+
+.css-sprite.dashboard.disabled,
+.css-sprite.dashboard.disabled:hover {
+  background-position: 0 0;
+  cursor: not-allowed;
+}
+
+.css-sprite.email {
+  background-position: -180px -60px;
+}
+
+.css-sprite.email:hover {
+  background-position: -60px -60px;
+}
+
+.css-sprite.email.disabled,
+.css-sprite.email.disabled:hover {
+  background-position: 0 -60px;
+  cursor: not-allowed;
+}
+
+.css-sprite.text {
+  background-position: -180px -120px;
+}
+
+.css-sprite.text:hover {
+  background-position: -60px -120px;
+}
+
+.css-sprite.text.disabled,
+.css-sprite.text.disabled:hover {
+  background-position: 0 -120px;
+  cursor: not-allowed;
+}
+
+.css-sprite.file {
+  background-position: -180px -180px;
+}
+
+.css-sprite.file:hover {
+  background-position: -60px -180px;
+}
+
+.css-sprite.file.disabled,
+.css-sprite.file.disabled:hover {
+  background-position: 0 -180px;
+  cursor: not-allowed;
+}

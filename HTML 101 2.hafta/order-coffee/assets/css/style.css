@@ -110,13 +110,20 @@ button[type="submit"]:hover {
   border-color: #594838;
 }
 
+.coffee-type-item {
+  cursor: pointer;
+}
+
 .coffee-type-item button {
-  border: 2px solid #594838;
-  border-radius: 5px;
-  background-color: #e2d9cf;
-  color: #594838;
-  font-weight: 700;
+  border-color: #594838;
+  background-color: #594838;
+  margin: 0 auto;
   padding: 5px 15px;
+}
+
+.coffee-type-item button:hover {
+  border-color: #8c3623;
+  background-color: #8c3623;
 }
 
 .coffee-type-item button:focus {
@@ -128,7 +135,7 @@ button[type="submit"]:hover {
 }
 
 .coffee-type-item button:active {
-  color: #8c3623;
+  color: #e2d9cf;
 }
 
 .coffee-type {

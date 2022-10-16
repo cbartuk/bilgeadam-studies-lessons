@@ -1,0 +1,224 @@
+<!-- 
+  Product List (index page),
+  About us, 
+  Contact us, 
+  Product Detail
+
+  header > logo + nav
+  footer > contact info + social media + links 
+
+  google font,
+  external css file,
+  semantic html, use section elements
+
+  github account,
+  git-scm.com download and setup,
+
+  git nedir? ne işe yarar?
+
+
+  çalışma ortamını hazırla
+  GitHub hesabı oluştur.  (https://github.com/)
+  https://coderspace.io/blog/github-nedir-ne-ise-yarar/
+  Git Bash yükle (https://git-scm.com/downloads)
+  https://coderspace.io/en/blog/git-nedir-nasil-kullanilir/
+  https://mergen.anadolu.edu.tr/courses/83/pages/git-kurulumu?module_item_id=514777
+  Node.js yükle
+  https://mergen.anadolu.edu.tr/courses/83/pages/node-dot-js-kurulumu?module_item_id=514779
+  Webpack yükle
+  https://serhatsait.medium.com/webpack-nedir-kurulumu-ve-kullan%C4%B1m%C4%B1-nas%C4%B1ld%C4%B1r-d75b013411a7
+
+
+  alternatif ödev
+  Youtube videolarından oluşan bir liste
+    Sayfanın bir ana başlığı ve açıklaması olmalı
+    Her video için ayrı ayrı başlıklar ve açıklama olmalı
+    Roboto google font kullanarak yapılmalı
+    koyu renk arka plan üzerine açık renk yazı ile olmalı
+    section footer header gibi section elementler kullanılarak semantic olarak kodlanmalı.
+
+  Bir blog yazısı oluşturalım
+    Sayfanın header content ve footer bölümleri olmalı
+    header alanında logo ve navigasyon linkleri olmalı. ayrıca bu alanın arkaplan rengi olmalı.
+    content alanında yazının başlığı, görsel ve paragraflar yer almalı
+    yazı içinde bold italic üstü çizili ve altı çizili yazılar bulunmalı.
+    başlık ve yazı renklendirilmeli. 
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Display</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .table {
+        display: table;
+        width: 100%;
+      }
+
+      .table div {
+        display: table-cell;
+        background-color: blue;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline;
+        padding: 15px;
+        margin: 10px 15px;
+
+        /* margin-top, margin-bottom, margin-left, margin-right */
+
+        /* padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px; */
+
+        /* 
+          inline elements: span, a, strong, em, img, input, button
+          block elements: div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, form, table, section, article, header, footer, nav
+        */
+      }
+
+      .product-list {
+        display: table;
+      }
+
+      .product-item {
+        display: table-cell;
+        padding: 15px 25px;
+        text-align: center;
+      }
+
+      .product-item a {
+        text-decoration: none;
+      }
+
+      .product-heading {
+        color: darkcyan;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .product-price {
+        font-weight: 700;
+      }
+
+      .product-item img {
+        display: block;
+        /* margin: 20px auto; */
+        width: 100px;
+      }
+
+      .grid {
+        width: 600px;
+        display: table;
+      }
+
+      .grid .left-column,
+      .grid .right-column {
+        display: table-cell;
+        vertical-align: top;
+      }
+
+      .grid .left-column {
+        width: 200px;
+      }
+
+      .grid .left-column img {
+        width: 100%;
+      }
+
+      .grid .right-column h1 {
+        margin: 0;
+      }
+
+      .grid .right-column {
+        width: 400px;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="left-column">
+        <img src="https://picsum.photos/500/500" alt="product" />
+      </div>
+      <div class="right-column">
+        <h1>Product Name</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim,
+          aliquid, et quos dolor consectetur eveniet ex dolore error architecto,
+          veniam a deserunt.
+        </p>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div class="product-item">
+        <a href="#">
+          <img src="https://picsum.photos/200/100" alt="product" />
+          <div class="product-heading">Product 1</div>
+        </a>
+        <p>Product 1 description</p>
+        <div class="product-price">200$</div>
+      </div>
+
+      <div class="product-item">
+        <a href="#">
+          <img src="https://picsum.photos/200/100" alt="product" />
+          <div class="product-heading">Product 2</div>
+        </a>
+        <p>Product 1 description</p>
+        <div class="product-price">200$</div>
+      </div>
+
+      <div class="product-item">
+        <a href="#">
+          <img src="https://picsum.photos/200/100" alt="product" />
+          <div class="product-heading">Product 3</div>
+        </a>
+        <p>Product 1 description</p>
+        <div class="product-price">200$</div>
+      </div>
+    </div>
+
+    <div class="table">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
